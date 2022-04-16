@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RepositoryUserService } from '../repository-user.service';
+import { User } from '../user';
 
 @Component({
   selector: 'app-mainpage',
