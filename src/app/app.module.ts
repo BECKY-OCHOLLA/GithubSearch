@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RepositorySearchComponent } from './repository-search/repository-search.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MainpageComponent,
     NavComponent,
     NotFoundComponent,
+    RepositorySearchComponent,
     
     
   ],
