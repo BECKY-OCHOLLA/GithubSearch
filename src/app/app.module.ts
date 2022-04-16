@@ -10,6 +10,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RepositorySearchComponent } from './repository-search/repository-search.component';
+import { UserSearchComponent } from './user-search/user-search.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RepositorySearchComponent } from './repository-search/repository-search
     NavComponent,
     NotFoundComponent,
     RepositorySearchComponent,
+    UserSearchComponent,
     
     
   ],
