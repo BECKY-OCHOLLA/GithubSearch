@@ -1,1 +1,19 @@
-<p>repository-search works!</p>
+div class="container search-page">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div>
+                <form (ngSubmit)="searchGithubUserRepositories()" id="search-form" #f="ngForm">
+                    <input type="text" class="form-control search" ngModel name="search"
+                    placeholder="Enter github username to search the repositories........" required #search="ngModel">
+                    <p class="text-danger error block" *ngIf="!search.valid && search.touched"><small>Fill in field!</small></p>
+                    <div class="d-grid mt-2">
+                        <button type="submit" class="btn btn-block btn-search" [disabled]="!f.valid">
+                          Search User Repositories<i class="fa fa-arrow-right"></i>
+                        </button>
+                      </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
