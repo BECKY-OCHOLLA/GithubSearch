@@ -14,8 +14,8 @@ export class MainpageComponent implements OnInit {
   constructor(private repositoryUserService: RepositoryUserService) { }
 
   ngOnInit(): void {
-    this.getUserDetails('Njihia413');
-    this.getUserRepositories('Njihia413');
+    this.getUserDetails('OCHOLLA-BECKY');
+    this.getUserRepositories('OCHOLLA-BECKY');
   }
 
   //user details
