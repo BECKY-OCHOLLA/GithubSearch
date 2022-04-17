@@ -6,8 +6,9 @@ import { RepositorySearchComponent } from './repository-search/repository-search
 import { UserSearchComponent } from './user-search/user-search.component';
 
 const routes: Routes = [
+  {path: '',component:MainpageComponent},
   { path: 'main', component: MainpageComponent },
-  { path: 'user-search', component: UserSearchComponent},
+  // { path: 'user-search', component: UserSearchComponent},
   { path: 'repository-search', component: RepositorySearchComponent},
   { path: '', redirectTo:"/main", pathMatch:"full"},
   { path: '**', component: NotFoundComponent},

@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import {RepositoryUserService } from './repository-user.service'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { FooterComponent } from './footer/footer.component';
-import { StarRepositoryDirective } from './star-repository.directive';
+// import { StarRepositoryDirective } from './star-repository.directive';
 import { UserSearchComponent } from './user-search/user-search.component';
 import { FormsModule } from '@angular/forms';
 import { RepositorySearchComponent } from './repository-search/repository-search.component';
@@ -20,7 +21,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     NavComponent,
     MainpageComponent,
     FooterComponent,
-    StarRepositoryDirective,
+    // StarRepositoryDirective,
     UserSearchComponent,
     RepositorySearchComponent,
     NotFoundComponent,
@@ -31,7 +32,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [RepositoryUserService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-5">
             <div class="card">
-                <img class="card-img-top" [src]="user?.avatar_url" alt="My Image">
+                <img class="card-img-top" [src]="user?.avatar_url" alt="my image">
                 <div class="card-body text-center">
                   <p class="card-text">Name:<span> {{user?.name}}</span></p>
                   <p>Username:<span> {{user?.login}}</span></p>
@@ -45,13 +45,13 @@
     </div>
 </div>
 
-<div class="container repository" id="repository">
+<div class="container-fluid repository" id="repository">
   <div class="col-md-12">
     <h2>My repositories</h2>
   </div>
-  <div class="col-md-12" *ngFor="let repository of repositories; let i=index">
+  <div class="col-md-8 "  *ngFor="let repository of repositories; let i=index">
     <div class="card card-repo">
-      <span class="float-right"><i appStarRepository title="Star Repository" class="fa fa-star"></i></span>
+      
       <div class="card-body text-center">
         <h4 class="card-title heading">{{repository.name}}</h4>
         <p class="card-text">{{repository.description}}</p>
@@ -65,3 +65,6 @@
     </div>
   </div>
 </div>
+<app-footer></app-footer>
+
+

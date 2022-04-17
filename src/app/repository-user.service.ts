@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+// import { url } from 'inspector';
 import { environment } from 'src/environments/environment';
 import { Repository } from './repository';
-import { User } from './user';
+import { User } from './users';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +11,12 @@ import { User } from './user';
 export class RepositoryUserService {
   getUserDetails: User;
   getRepositoryDetails: Repository;
+ 
 
 
   constructor(private http: HttpClient) {
+
+    // const apiUrl='https://api.github.com/users'
     this.getUserDetails = new User(
       '',
       '',
@@ -55,14 +59,21 @@ export class RepositoryUserService {
           environment.apiUrl +
             '/' +
             githubUsername  +
-            '?access_token=' +
+            
+             '?access_token=' +
             environment.apiKey
         )
         .toPromise()
         .then(
           (response) => {
-            this.getUserDetails = response;
+            if (response){
+              this.getUserDetails = response;
+            
+           
+
+            }
             resolve();
+            
           },
           (error) => {
             reject(error);
@@ -95,6 +106,7 @@ export class RepositoryUserService {
         .toPromise()
         .then(
           (response) => {
+            if (response)
             this.getRepositoryDetails = response;
             resolve();
           },

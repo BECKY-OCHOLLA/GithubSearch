@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RepositoryUserService } from '../repository-user.service';
-import { User } from '../user';
+import { User } from '../users';
 
 @Component({
   selector: 'app-mainpage',
@@ -8,14 +8,15 @@ import { User } from '../user';
   styleUrls: ['./mainpage.component.css']
 })
 export class MainpageComponent implements OnInit {
+  
 
   user!: User;
   repositories: any;
   constructor(private repositoryUserService: RepositoryUserService) { }
 
   ngOnInit(): void {
-    this.getUserDetails('OCHOLLA-BECKY');
-    this.getUserRepositories('OCHOLLA-BECKY');
+    this.getUserDetails('BECKY-OCHOLLA');
+    this.getUserRepositories('BECKY-OCHOLLA');
   }
 
   //user details

@@ -2,8 +2,12 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+// import { url } from "inspector";
+
 export const environment = {
-  production: false
+  production: false,
+   apiUrl:'https://api.github.com/users',
+    apiKey: 'c041164edf48015fe1c0af552c660b8342b0e865',
   
 };
 

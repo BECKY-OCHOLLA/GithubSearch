@@ -1,0 +1,15 @@
+.navbar {
+    background-color:black;
+    height: 80px;
+}
+
+.navbar-brand {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar-nav a{
+    color: white; 
+    justify-content: space-evenly;
+}
