@@ -58,20 +58,20 @@ export class RepositoryUserService {
         .get<ApiUserResponse>(
           environment.apiUrl +
             '/' +
-            githubUsername  +
+            githubUsername  
             
-             '?access_token=' +
-            environment.apiKey
+            //  '?access_token=' +
+            // environment.apiKey
         )
         .toPromise()
         .then(
           (response) => {
-            if (response){
+            if (response)
               this.getUserDetails = response;
             
            
 
-            }
+            
             resolve();
             
           },
