@@ -1,27 +1,55 @@
-# Githubsearch
+## GithubSearch
+It is a website where users can enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+## By
+### Becky Ocholla
+### Table of Contents
+* Description
+* Installation
+* Technologies Used
+* Live link
+* Known Bugs
+* License
+* Authors Info
 
-## Development server
+## Description
+This application takes in the building blocks of angular to deliver an app that interacts with the user where users can enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
+To Run this app in your machine, you need to:
 
-## Code scaffolding
+Open Terminal Ctrl+Alt+T
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+git clone https://github.com/BECKY-OCHOLLA/GithubSearch
 
-## Build
+cd GithubSearch
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+code . or atom . based on the text editor you have to open and view the project.
 
-## Running unit tests
+## Technologies Used
+* Angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* HTML - To build the structure of the pages.
 
-## Running end-to-end tests
+* CSS - Used to style the pages incuding the side bar
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Bootstrap - To style the web page.
 
-## Further help
+* TypeScript - To add functionality and form validation.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Live link
+Here is the live link to the website.
+
+
+## Known Bugs
+At the time of deployment, there was no bugs identified by the developer, If you encounter bugs while running the application, create an issue with your observation and expected output, the developer will look at it.
+
+## License
+This project is under the MIT License.
+
+## Authors Info/ Contact info
+Email - ochollabecky@gmail.com
+
+
+
+This project was generated with Angular CLI version 13.3.0.
