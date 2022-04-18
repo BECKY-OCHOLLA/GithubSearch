@@ -39,6 +39,7 @@ code . or atom . based on the text editor you have to open and view the project.
 
 ## Live link
 Here is the live link to the website.
+https://becky-ocholla.github.io/GithubSearch/
 
 
 ## Known Bugs
